@@ -31,7 +31,7 @@ import 'package:window_size/window_size.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  final errorFile = File('latest.log')
+  final errorFile = File('${Directory.systemTemp.path}/retro_latest.log')
     ..createSync();
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
