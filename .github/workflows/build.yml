@@ -89,7 +89,7 @@ jobs:
         # Create AppImage
         ./appimagetool-x86_64.AppImage retro.AppDir retro.AppImage
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: linux
         path: retro.AppImage
